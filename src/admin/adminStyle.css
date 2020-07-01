@@ -1,0 +1,30 @@
+.button{
+    -fx-background-color : transparent;
+    -fx-text-fill : #f0f0f0
+}
+.button:hover{
+    -fx-background-color : #404040;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 0, 0, 0, 0);
+    -fx-background-radius : 0;
+}
+#pane{
+    -fx-border-color: #2196f3;
+    -fx-border-weight: 2;
+    -fx-border-radius : 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 2, 2);
+    -fx-background-color : white;
+    -fx-background-radius : 5;
+
+}
+#pane1{
+    -fx-border-color: #2196f3;
+    -fx-border-weight: 2;
+    -fx-border-radius : 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 2, 2);
+    -fx-background-color : white;
+    -fx-background-radius : 5;
+
+}
+#menuBar{
+    -fx-background-color : #2196f3;
+}

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
+   <top>
+      <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="853.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#homeRefresh" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Refresh" textFill="#f0f0f0">
+               <HBox.margin>
+                  <Insets right="30.0" top="12.0" />
+               </HBox.margin>
+            </Button>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="18.0" prefWidth="101.0" text="Date" />
+                  <Label fx:id="homeDate" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="18.0" prefWidth="101.0" text="15/01/2020" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox style="-fx-background-color: #e0e0e0; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #595F7F; -fx-background-radius: 10 10 0 0;" text="Total Clients" textFill="#f0f0f0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="115.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #BC4A64;" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../img/client.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="homeTotalClients" alignment="CENTER" maxWidth="1.7976931348623157E308" text="000" textFill="#3a3d40" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox style="-fx-background-color: #e0e0e0; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #595F7F; -fx-background-radius: 10 10 0 0;" text="Total Sells" textFill="#f0f0f0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #BC4A64;" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../img/selling.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="homeTotalSells" alignment="CENTER" maxWidth="1.7976931348623157E308" text="000" textFill="#3a3d40" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox style="-fx-background-color: #e0e0e0; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #595F7F; -fx-background-radius: 10 10 0 0;" text="Total Amount" textFill="#f0f0f0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="115.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #BC4A64;" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../img/cash.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="homeTotalAmount" alignment="CENTER" maxWidth="1.7976931348623157E308" text="000€" textFill="#3a3d40" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox style="-fx-background-color: #e0e0e0; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #595F7F; -fx-background-radius: 10 10 0 0;" text="Total Jewels" textFill="#f0f0f0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="115.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #BC4A64;" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../img/jewel.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="homeTotalJewels" alignment="CENTER" maxWidth="1.7976931348623157E308" text="000" textFill="#3a3d40" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="100.0" text="Hair/Head" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsHead" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="125.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="100.0" text="Neck" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsNeck" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="162.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxWidth="100.0" text="Arms" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsArms" layoutX="10.0" layoutY="10.0" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="199.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxWidth="100.0" text="Hands" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsHands" layoutX="10.0" layoutY="10.0" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="236.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxWidth="100.0" text="Body" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsBody" layoutX="10.0" layoutY="10.0" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="273.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxWidth="100.0" text="Feet" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsFeet" layoutX="10.0" layoutY="10.0" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="310.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" maxWidth="100.0" text="Special Item" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="homeJewelsSp" layoutX="10.0" layoutY="10.0" maxWidth="100.0" text="0" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets bottom="9.0" left="20.0" right="20.0" top="9.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children></VBox>
+            <VBox layoutX="510.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox style="-fx-background-color: #e0e0e0; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #595F7F; -fx-background-radius: 10 10 0 0;" text="Gold Rate/g" textFill="#f0f0f0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="115.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #BC4A64;" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../img/rate.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="11.0" top="11.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="goldRate" alignment="CENTER" maxWidth="1.7976931348623157E308" text="000€" textFill="#3a3d40" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox style="-fx-background-color: #e0e0e0; -fx-background-radius: 10;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="335.0" style="-fx-background-color: #595F7F; -fx-background-radius: 10 10 0 0;" text="Aluminium Rate/g" textFill="#f0f0f0">
+                           <padding>
+                              <Insets bottom="5.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Calibri Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="115.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #BC4A64;" HBox.hgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../img/rate.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="11.0" top="11.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="AluRate" alignment="CENTER" maxWidth="1.7976931348623157E308" text="000€" textFill="#3a3d40" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial" size="33.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children></VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

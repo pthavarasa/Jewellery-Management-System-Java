@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="560.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" text="Clients Manager">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="301.0">
+               <children>
+                  <TextField fx:id="clientID" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="131.0" promptText="ID">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="New ID" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TextField fx:id="clientFName" promptText="First Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="clientLName" promptText="Last Name">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="clientPhone" promptText="Phone Number">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="clientEmail" promptText="Email">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="clientAddress" promptText="Address">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <CheckBox fx:id="clientLCard" mnemonicParsing="false" text="Loyalty Card" />
+            <HBox alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#clientAdd" prefWidth="100.0" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Add" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clientEdit" prefWidth="100.0" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Edit" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="369.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#clientRemove" prefWidth="100.0" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Remove" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#clientClearForm" prefWidth="100.0" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Clear Form" textFill="#f0f0f0">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#clientLoad" prefWidth="100.0" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Load Data" textFill="#f0f0f0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="clientErr">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <HBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </HBox.margin>
+      </VBox>
+      <TableView fx:id="clientsDataStringTableView" prefHeight="200.0" HBox.hgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="clientsDataStringIDColumn" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="clientsDataStringFNameColumn" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="clientsDataStringLNameColumn" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="clientsDataStringEmailColumn" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="clientsDataStringPhoneColumn" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="clientsDataStringAdressColumn" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="clientsDataStringLoyaltyColumn" prefWidth="75.0" text="Loyalty" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</HBox>

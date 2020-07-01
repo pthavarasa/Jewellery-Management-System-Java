@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #;" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
+   <children>
+      <Label alignment="CENTER" text="Mail Service">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="serviceTo" promptText="To">
+         <VBox.margin>
+            <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="serviceSubject" layoutX="10.0" layoutY="10.0" promptText="Subject">
+         <VBox.margin>
+            <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+         </VBox.margin>
+      </TextField>
+      <TextArea fx:id="ServiceContent" prefHeight="200.0" prefWidth="200.0" promptText="Content">
+         <VBox.margin>
+            <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+         </VBox.margin>
+      </TextArea>
+      <Button mnemonicParsing="false" onAction="#serviceSendButton" style="-fx-background-color: #404040; -fx-background-radius: 5;" text="Send" textFill="#f0f0f0">
+         <VBox.margin>
+            <Insets bottom="5.0" left="30.0" right="30.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+      <Label fx:id="serviceErr">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
