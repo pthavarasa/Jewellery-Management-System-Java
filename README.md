@@ -1,6 +1,8 @@
 # Jewellery-Management-System-Java
 Jewellery management system based on Java
 
+Demo : [https://youtu.be/8pdpUxniXUI](https://youtu.be/8pdpUxniXUI)
+
 ### Pacages
 ```
 itextpdf-5.1.0
